@@ -35,7 +35,6 @@ bintray {
             name = '0.1-SNAPSHOT'
             desc = 'Set of DTOs and interfaces for generic domain DNS record manipulation'
             released  = new Date()
-            attributes = []
         }
     }
 }
