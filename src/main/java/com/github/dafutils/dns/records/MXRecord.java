@@ -9,7 +9,7 @@ public interface MXRecord {
 
 	long ttl();
 
-	String in();
+	String clazz();
 
 	int preferenceNumber();
 
@@ -17,7 +17,7 @@ public interface MXRecord {
 
 	String type();
 
-	default MXRecord of(String destinationDomain, long ttl, int preferenceNumber, String mailServerName) {
+	static MXRecord of(String destinationDomain, long ttl, int preferenceNumber, String mailServerName) {
 		return new MXRecordImpl(destinationDomain, ttl, preferenceNumber, mailServerName);
 	}
 }

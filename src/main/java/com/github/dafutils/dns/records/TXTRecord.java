@@ -14,7 +14,7 @@ public interface TXTRecord {
 
 	String rr();
 
-	default TXTRecord of(String destinationDomain,
+	static TXTRecord of(String destinationDomain,
 						 long ttl,
 						 Map<String, String> text) {
 

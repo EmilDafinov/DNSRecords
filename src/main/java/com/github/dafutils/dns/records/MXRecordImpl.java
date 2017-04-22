@@ -29,7 +29,7 @@ class MXRecordImpl implements MXRecord {
 	}
 
 	@Override
-	public String in() {
+	public String clazz() {
 		return "IN";
 	}
 
